@@ -53,10 +53,11 @@ at step 2.
 |---|---|---|
 | `app/` | A tiny web service (Python + FastAPI) | The thing being deployed. Has a `/health` page that says whether it is OK. |
 | `healthcheck/validate.py` | A Python script | The inspector. Knocks on `/health`, decides healthy or not, exits `0` or `1`. |
-| `ansible/` | Ansible playbook + two roles | The mover. Starts, stops, renames and restores containers. |
+| `scripts/deploy.sh` | A shell script | Lightweight deployment mover. Starts, stops, renames, health-checks, and restores containers. |
+| `ansible/` | Ansible playbook + two roles | Alternative mover. Orchestrates container transitions via Ansible. |
 | `scripts/log_event.py` | A Python script | The diary. Appends one line per deployment to a JSON file. |
 | `dashboard/index.html` | A single HTML page | Draws the diary as a colour-coded timeline. |
-| `.github/workflows/` | Two GitHub Actions workflows | The button. Runs everything in the cloud, then publishes the dashboard. |
+| `.github/workflows/` | GitHub Actions workflows | The button. Runs everything in the cloud, then publishes the dashboard. |
 
 Nothing needs to be installed locally. It all runs inside GitHub Actions.
 
