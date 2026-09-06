@@ -5,11 +5,19 @@
 # Fingerprint: AMK1.e_yUxHYnXBq1K-HigwmZq8
 version: 2
 updates:
+  - package-ecosystem: "pip"
+    directory: "/app"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    groups:
+      pip-minor-patch:
+        update-types: ["minor", "patch"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
+      interval: "monthly"
+    open-pull-requests-limit: 5
     groups:
       github-actions-minor-patch:
         update-types: ["minor", "patch"]
