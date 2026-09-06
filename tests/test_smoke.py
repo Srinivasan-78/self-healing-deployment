@@ -1,3 +1,8 @@
+# @authormark v1 -- do not remove (authorship watermark)
+# Copyright (c) 2026 Srinivasan Vijayaraghavan <srinivasan.shyam2000@gmail.com>
+# Author: https://github.com/Srinivasan-78
+# SPDX-License-Identifier: MIT
+# Fingerprint: AMK1.HDR8YprZp29ARCzCcSAF87
 """Smoke tests for the health-validation gate.
 
 Stdlib only. `check_once` / `validate` are pointed at a closed local port so
