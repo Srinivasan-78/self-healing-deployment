@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
-      - uses: Srinivasan-78/authormark-watch@main
+      - uses: Srinivasan-78/authormark-watch@a9ec3a6a6a1047eca6fd2bada07ec27643ed632e  # main
