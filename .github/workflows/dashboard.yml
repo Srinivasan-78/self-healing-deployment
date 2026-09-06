@@ -47,12 +47,8 @@ jobs:
         run: |
           mkdir -p _site
           cp dashboard/index.html _site/
-          if [ -f fresh-log/deployments.json ]; then
-            cp fresh-log/deployments.json _site/deployments.json
-          else
-            cp deployment_log/deployments.json _site/deployments.json
-          fi
-          sed -i 's|../deployment_log/deployments.json|deployments.json|' _site/index.html
+          cp fresh-log/deployments.json _site/deployments.json 2>/dev/null || cp deployment_log/deployments.json _site/deployments.json
+          sed -i 's|../deployment_log/||' _site/index.html
 
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa  # v3
         with:
