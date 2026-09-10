@@ -9,6 +9,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Deployment history and health status dashboard for demo-service self-healing pipeline." />
 <title>Deployment History — demo-service</title>
 <style>
   body { font-family: -apple-system, system-ui, sans-serif; background: #0b0f14; color: #e6edf3; margin: 0; padding: 40px; }
@@ -28,16 +30,18 @@
   .reason { color: #8b949e; font-size: 12px; margin-top: 2px; }
   #empty { color: #8b949e; margin-top: 24px; }
   input[type=file] { margin-top: 20px; color: #8b949e; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<main class="wrap">
   <h1>Deployment History</h1>
   <p class="sub">demo-service · self-healing pipeline</p>
   <div id="events"></div>
   <div id="empty" style="display:none;">No deployment_log/deployments.json loaded yet — run a deploy or chaos test, then load the file below.</div>
-  <input type="file" id="fileInput" accept="application/json" />
-</div>
+  <label for="fileInput" class="visually-hidden">Upload deployment log JSON</label>
+  <input type="file" id="fileInput" accept="application/json" aria-label="Upload deployments JSON log" />
+</main>
 
 <script>
 function render(events) {
