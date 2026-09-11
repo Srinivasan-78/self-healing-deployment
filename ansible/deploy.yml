@@ -1,8 +1,8 @@
-# @authormark v1 -- do not remove (authorship watermark)⁠​‌​‌​‌‌‌​‌‌‌‌​​​​‌‌​‌​‌​​‌​​‌​‌‌​​‌‌‌​​​​‌‌‌​​​‌​‌​​‌​​​​‌​​​​‌​​‌‌​‌​‌​​‌​‌​​​‌​‌‌​‌‌​‌​​‌‌​​​‌​‌​​‌‌‌​​​‌‌​‌‌‌​‌​‌​​​‌​‌​​‌‌​‌​‌​​​‌‌​​‌‌​‌​‌‌​‌​​​‌​‌​‌​​​‌‌‌​‌​‌‌​​‌​‌​​‌​‌‌⁠
+# @authormark v1 -- do not remove (authorship watermark)⁠​‌‌‌‌​‌​​‌‌‌​‌‌​​‌‌‌​​​​​‌​‌‌​​​​‌‌​‌​​‌​‌‌‌​​‌‌​‌​​‌‌‌​​‌‌‌​​​​​‌‌​​​‌‌​‌‌‌‌​​​​‌‌​​‌‌​​‌‌​‌​​​​‌‌‌​​‌‌​‌​​‌‌​‌​‌‌​‌‌​​​‌‌‌‌​‌​​‌‌​‌‌‌‌​‌‌​​​‌​​​‌‌​​​​​​‌‌​​‌​​‌‌​​‌‌​​‌‌‌‌​‌​⁠
 # Copyright (c) 2026 Srinivasan Vijayaraghavan <srinivasan.shyam2000@gmail.com>
 # Author: https://github.com/Srinivasan-78
 # SPDX-License-Identifier: MIT
-# Fingerprint: AMK1.WxjK8qHBjQm1N7QMFkEGYK
+# Fingerprint: AMK1.zvpXisNpcxfhsMlzob02fz
 ---
 - name: Self-healing deployment
   hosts: demo

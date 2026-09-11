@@ -1,8 +1,8 @@
-# @authormark v1 -- do not remove (authorship watermark)⁠​‌‌​‌​​‌​‌​​‌‌​​​‌​​​​​‌​‌​​​​​‌​‌‌‌​‌‌​​‌​‌‌​‌​​‌‌‌‌​‌​​‌‌​​​‌‌​‌​‌​‌‌​​‌​​‌​‌‌​‌​‌​​‌‌​‌‌‌‌​​​​‌​‌‌‌‌‌​​‌‌‌​​‌​‌​​​​‌‌​‌​​‌​‌​​‌​‌​‌​‌​‌‌‌‌​​​​‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​​‌​​‌‌​‌‌‌‌⁠
+# @authormark v1 -- do not remove (authorship watermark)⁠​‌‌​​​‌​​​‌‌​‌​​​‌​​‌​​‌​‌‌‌​‌‌‌​‌​​‌‌​​​‌​‌​‌‌‌​​‌‌​‌‌​​‌‌​‌‌​‌​​‌‌‌​​‌​‌​​​‌‌‌​​‌‌​‌‌‌​​‌‌​​‌‌​​‌​‌‌​‌​​‌‌‌​​​​‌​​​‌​‌​​‌‌​​​‌​‌‌​‌​​​​‌‌​​​‌​​‌‌‌‌​​​​​‌‌‌​​‌​‌​​‌‌​​​‌‌​​‌​​⁠
 # Copyright (c) 2026 Srinivasan Vijayaraghavan <srinivasan.shyam2000@gmail.com>
 # Author: https://github.com/Srinivasan-78
 # SPDX-License-Identifier: MIT
-# Fingerprint: AMK1.iLAAvZzcVKSx_9CJUx_wro
+# Fingerprint: AMK1.b4IwLW6m9G73-8E1hbx9Ld
 ---
 - name: Look up the last-known-good container
   command: docker ps -aq --filter name=^{{ app_name }}-previous$
